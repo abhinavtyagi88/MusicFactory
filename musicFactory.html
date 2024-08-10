@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+
+        .container_background {
+            
+            background-image: url('https://wallpapercave.com/wp/wp6475241.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 24px;
+        }
+
+        .navbar form {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar select, .navbar input, .navbar button {
+            margin: 0 5px;
+            padding: 5px;
+        }
+        
+
+        .musicAlbum {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 2%;
+            margin-left:10%;
+            margin-right: 10%;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.995);
+            margin: 10px;
+            width: 200px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 4px;
+            color: black; 
+        }
+
+        img {
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 4px;
+
+            width: 100%;
+        }
+
+        .card-body {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .player-container {
+            
+            position: fixed;
+            bottom: 0;
+            width: 80%;
+            display: flex;
+            align-items: center;
+            margin-left: 12%;
+            margin-bottom: 1%;
+        }
+
+        .player-container img {
+            width: 50px;
+            margin-right: 20px;
+            border: 5px solid #ffffff;
+            border-radius: 4px;
+        }
+
+        .player-container audio {
+            width: 80%;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Factory</title>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="#">MusicFactory</a>
+        <form id="searchForm">
+            <select id="options">
+                <option value="tracks">tracks</option>
+                <option value="albums">albums</option>
+                <option value="podcasts">podcasts</option>
+                <option value="multi">multi</option>
+            </select>
+            <input type="search" id="query" placeholder="Search">
+            <button type="submit">Search</button>
+        </form>
+    </nav>
+
+    <div class="container_background">
+        <div class="musicAlbum"></div>
+    </div>
+
+    <div class="player-container">
+        <img src="https://cdn-icons-png.flaticon.com/512/16695/16695368.png" id="player-image" alt="">
+        <audio controls id="player"></audio>
+    </div>
+
+    <script src="musicFactory.js"> 
+
+    </script>
+</body>
+</html>
