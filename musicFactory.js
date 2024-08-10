@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', async (event) => {
     const options = {
         method: 'GET',
         headers: {
-            'x-rapidapi-key': '60559c5a31msh6988ab81089220cp1eb108jsn07f5201babb7',
+            'x-rapidapi-key': 'b25036622emsh59117c5d50e9e77p186ebajsn276bd221a1fe',
             'x-rapidapi-host': 'spotify23.p.rapidapi.com'
         }
     };
@@ -41,7 +41,7 @@ document.getElementById('searchForm').addEventListener('submit', async (event) =
     const options = {
         method: 'GET',
         headers: {
-            'x-rapidapi-key': '60559c5a31msh6988ab81089220cp1eb108jsn07f5201babb7',
+            'x-rapidapi-key': 'b25036622emsh59117c5d50e9e77p186ebajsn276bd221a1fe',
             'x-rapidapi-host': 'spotify23.p.rapidapi.com'
         }
     };
@@ -74,7 +74,7 @@ async function playTrack(songId) {
     const options = {
         method: 'GET',
         headers: {
-            'x-rapidapi-key': '60559c5a31msh6988ab81089220cp1eb108jsn07f5201babb7',
+            'x-rapidapi-key': 'b25036622emsh59117c5d50e9e77p186ebajsn276bd221a1fe',
             'x-rapidapi-host': 'spotify23.p.rapidapi.com'
         }
     };
