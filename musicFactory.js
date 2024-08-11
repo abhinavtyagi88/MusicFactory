@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', async (event) => {
                 <div class="card" onclick="playTrack('${element.data.id}')">
                     <img src="${element.data.albumOfTrack.coverArt.sources[0].url}" alt="Album Art">
                     <div class="card-body">
-                        <p>${songTitle.length<15?songTitle:songTitle.slice(0,15)+"..."}</p>
+                        <p>${songTitle.length<12?songTitle:songTitle.slice(0,12)+"..."}</p>
                     </div>
                 </div>
             `;
