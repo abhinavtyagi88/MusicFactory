@@ -15,11 +15,12 @@ document.addEventListener('DOMContentLoaded', async (event) => {
 
         let content = "";
         result.tracks.items.map((element, index) => {
+            let songTitle = element.data.albumOfTrack.name
             content += `
                 <div class="card" onclick="playTrack('${element.data.id}')">
                     <img src="${element.data.albumOfTrack.coverArt.sources[0].url}" alt="Album Art">
                     <div class="card-body">
-                        <p>${element.data.albumOfTrack.name}</p>
+                        <p>${songTitle.length<15?songTitle:songTitle.slice(0,15)+"..."}</p>
                     </div>
                 </div>
             `;
